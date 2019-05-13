@@ -2,7 +2,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: kube-state-metrics
-  namespace: sys-mon
   labels:
     k8s-app: kube-state-metrics
   annotations:
