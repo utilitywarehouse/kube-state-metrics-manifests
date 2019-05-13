@@ -49,4 +49,4 @@ rules:
 - apiGroups: ["certificates.k8s.io"]
   resources:
   - certificatesigningrequests
-verbs: ["list", "watch"]
+  verbs: ["list", "watch"]
