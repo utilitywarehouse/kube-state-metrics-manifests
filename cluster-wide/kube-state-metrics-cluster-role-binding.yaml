@@ -10,4 +10,6 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: kube-state-metrics
-  namespace: ksm-sa-namespace
+  # Placeholder, patch with the namespace value where Deployment/ServiceAccount
+  # resources live
+  namespace: default
