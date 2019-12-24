@@ -16,16 +16,16 @@ spec:
     spec:
       serviceAccountName: kube-state-metrics
       containers:
-      - name: kube-state-metrics
-        image: quay.io/coreos/kube-state-metrics:v1.7.2
-        ports:
-        - name: http-metrics
-          containerPort: 8080
-        - name: telemetry
-          containerPort: 8081
-        readinessProbe:
-          httpGet:
-            path: /healthz
-            port: 8080
-          initialDelaySeconds: 5
-          timeoutSeconds: 5
+        - name: kube-state-metrics
+          image: quay.io/coreos/kube-state-metrics:v1.9.0
+          ports:
+            - name: http-metrics
+              containerPort: 8080
+            - name: telemetry
+              containerPort: 8081
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 8080
+            initialDelaySeconds: 5
+            timeoutSeconds: 5

@@ -8,8 +8,8 @@ roleRef:
   kind: ClusterRole
   name: kube-state-metrics
 subjects:
-- kind: ServiceAccount
-  name: kube-state-metrics
-  # Placeholder, patch with the namespace value where Deployment/ServiceAccount
-  # resources live
-  namespace: example
+  - kind: ServiceAccount
+    name: kube-state-metrics
+    # Placeholder, patch with the namespace value where Deployment/ServiceAccount
+    # resources live
+    namespace: example
