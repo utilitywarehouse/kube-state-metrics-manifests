@@ -1,0 +1,9 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube-state-metrics
+spec:
+  template:
+    metadata:
+      annotations:
+        prometheus.io/scrape: "true"
